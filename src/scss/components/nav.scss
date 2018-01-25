@@ -1,0 +1,27 @@
+.navbar{
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 20px;
+  position: fixed;
+  background-color: $primary-color;
+  @extend .navbar-expand-lg, .navbar-light;
+  span{
+    @extend .navbar-toggler-icon;
+  }
+  a{
+    @extend .navbar-brand;
+  }
+  #navbarNav {
+    @extend .collapse, .navbar-collapse;
+    ul{
+      @extend .navbar-nav;
+      li {
+        @extend .nav-item;
+        text-align: center;
+        a{
+          color: white;
+        }
+      }
+    }
+  }
+}

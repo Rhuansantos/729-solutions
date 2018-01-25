@@ -19,6 +19,7 @@
   },
   "author": "Rhuan Santos",
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "gulp-pug": "^3.3.0"
   }
 }

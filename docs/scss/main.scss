@@ -1,0 +1,12 @@
+// =============== BOOTSTRAP 4
+@import "node_modules/bootstrap/scss/bootstrap";
+// Font
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+// Custon files
+@import "util/globalConfig.scss";
+@import "util/variables.scss";
+@import "components/nav.scss";
+@import "layout/footer.scss";
+@import "pages/home.scss";
+@import "pages/about.scss";
+@import "pages/contact.scss";

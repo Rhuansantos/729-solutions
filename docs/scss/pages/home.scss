@@ -1,0 +1,48 @@
+.carousel{
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 50px;
+  ol{
+    li{
+      cursor: pointer;
+    }
+  }
+  .carousel-item img{
+    min-height: 300px;
+    object-fit: cover;
+  }
+}
+
+.content{
+  margin-bottom: 50px;
+  @extend .container;
+  h1,h2{
+    color: $primary-color;
+  }
+  @media (max-width: 991px) {
+    min-width: 90%;
+  }
+  .flex-content{
+    box-sizing: border-box;
+    padding: 0px 20px 0px 0px;
+    @include make-col(8);
+    @media (max-width: 1200px) { 
+      @include make-col(7);
+    }
+    @media (max-width: 991px) {
+      padding: 10px;
+      @include make-col(12);
+    }
+  }
+  .fix-content{
+    position: relative;
+    @include make-col(4);
+    min-width: 380px;
+    max-width: 380px;
+    @media (max-width: 991px) {
+      padding: 10px;
+      position: unset;
+      @include make-col(12);
+    }
+  }
+}

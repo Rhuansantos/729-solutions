@@ -1,0 +1,57 @@
+.contact-us{
+  max-width: 80%;
+  padding: 50px 0px 50px 0px;
+  @extend .container;
+  @media (max-width: 991px) {
+    max-width: 90%;
+  }
+  h1{
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+  form{
+    @include make-col(6);
+    @media (max-width: 991px) {
+      @include make-col(12);
+    }
+    .invalid-feedback, .valid-feedback{
+      position: relative;
+      top: -10px;
+    }
+    .name, .lastName{
+      @extend .col;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      @media (max-width: 991px) {
+        flex-basis: 100%;
+        margin-left: 0px !important;
+      }
+    }
+    .lastName{margin-left: 10px;}
+    input, textarea{
+      @extend .form-control;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    box-sizing: border-box;
+    padding: 20px;
+    button{
+      @extend .btn, .btn-dark;
+      width: 100%;
+    }
+  }
+  .map{
+    box-sizing: border-box;
+    padding: 20px;
+    min-height: 350px;
+    @extend .embed-responsive;
+    @include make-col(6);
+    @media (max-width: 991px) {
+      @include make-col(12);
+    }
+    iframe{
+      min-width: 100%;
+      min-height: 350px;
+    }
+  }
+}

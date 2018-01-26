@@ -11,12 +11,17 @@
   }
   a{
     @extend .navbar-brand;
+    img{
+      max-width: 200px;
+    }
   }
   #navbarNav {
     @extend .collapse, .navbar-collapse;
     ul{
       @extend .navbar-nav;
+      margin-left: 50px;
       li {
+        margin-left: 30px;
         @extend .nav-item;
         text-align: center;
         a{

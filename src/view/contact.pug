@@ -4,18 +4,34 @@ block content
     section.contact-us
       h1 Contact Us
       .row
-        form(action="")
+        form#contactForm(action="")
           .form-row
             .name
-              input(type='text', placeholder='First name')
+              input.form-name(name='name' type='text', placeholder='First name')
+              .valid-feedback Looks Good! 
+                i.fas.fa-check-circle
+              .invalid-feedback Please do not use numbers or special characters 
+                i.fas.fa-exclamation-triangle
             .lastName
-              input(type='text', placeholder='Last name')
+              input.form-lastName(name='lastName' type='text', placeholder='Last name')
+              .valid-feedback Looks Good! 
+                i.fas.fa-check-circle
+              .invalid-feedback Please do not use numbers or special characters 
+                i.fas.fa-exclamation-triangle
           .form-row
-            input(type='email' name='email' placeholder='email')
+            input.form-email(type='email' name='email' placeholder='email')
+            .valid-feedback Looks Good! 
+              i.fas.fa-check-circle
+            .invalid-feedback Please type a valid e-mail 
+              i.fas.fa-exclamation-triangle
           .form-row
-            textarea(rows='5' cols='50')
+            textarea.form-msg(name='text' rows='5' cols='50')
+            .valid-feedback Looks Good! 
+              i.fas.fa-check-circle
+            .invalid-feedback Minimum of 10 characters and a maximum of 50 
+              i.fas.fa-exclamation-triangle
           .form-row
-            button(type='submit') Send
+            button.send(type='submit') Send
         .map
           iframe(height='450', frameborder='0', style='border:0', 
           src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCXRgu2MyzPEeePrSn6UFPsZm1vdOti8Ow\&q=Space+Needle,Seattle+WA', allowfullscreen='')

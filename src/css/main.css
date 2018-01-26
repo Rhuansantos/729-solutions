@@ -6232,6 +6232,9 @@ html, body {
       .contact-us form {
         flex: 0 0 100%;
         max-width: 100%; } }
+    .contact-us form .invalid-feedback, .contact-us form .valid-feedback {
+      position: relative;
+      top: -10px; }
     .contact-us form .name, .contact-us form .lastName {
       padding-right: 0px !important;
       padding-left: 0px !important; }

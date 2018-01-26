@@ -6111,7 +6111,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 * {
-  transition: all .5s ease-in-out; }
+  transition: all .3s ease-in-out; }
 
 main {
   padding-top: 56px;
@@ -6127,13 +6127,29 @@ html, body {
   position: fixed;
   z-index: 999;
   background-color: #137742; }
+  @media (max-width: 991px) {
+    .navbar {
+      position: absolute;
+      margin-bottom: 0px; } }
   .navbar a img {
     max-width: 200px; }
   .navbar #navbarNav ul {
     margin-left: 50px; }
+    @media (max-width: 991px) {
+      .navbar #navbarNav ul {
+        padding-top: 30px;
+        margin-left: 0;
+        margin-bottom: 15px;
+        height: 100vh; } }
     .navbar #navbarNav ul li {
       margin-left: 30px;
       text-align: center; }
+      @media (max-width: 991px) {
+        .navbar #navbarNav ul li {
+          margin-left: 0px;
+          padding: 20px;
+          border-top: 1px solid white;
+          border-bottom: 1px solid white; } }
       .navbar #navbarNav ul li a {
         color: white; }
 

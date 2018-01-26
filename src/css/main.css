@@ -6043,8 +6043,25 @@ main {
   min-height: 50px;
   margin-bottom: 20px;
   position: fixed;
+  z-index: 999;
   background-color: #137742; }
   .navbar #navbarNav ul li {
     text-align: center; }
     .navbar #navbarNav ul li a {
       color: white; }
+
+.footer {
+  width: 100%;
+  min-height: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black; }
+  .footer p {
+    padding: 10px;
+    text-align: center;
+    color: white; }
+
+.carousel ol li {
+  cursor: pointer; }

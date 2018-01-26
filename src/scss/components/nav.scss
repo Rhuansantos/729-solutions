@@ -3,6 +3,7 @@
   min-height: 50px;
   margin-bottom: 20px;
   position: fixed;
+  z-index: 999;
   background-color: $primary-color;
   @extend .navbar-expand-lg, .navbar-light;
   span{

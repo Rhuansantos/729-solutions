@@ -1,0 +1,22 @@
+extends layout/main
+block content
+  main
+    section.contact-us
+      h1 Contact Us
+      .row
+        form(action="")
+          .form-row
+            .name
+              input(type='text', placeholder='First name')
+            .lastName
+              input(type='text', placeholder='Last name')
+          .form-row
+            input(type='email' name='email' placeholder='email')
+          .form-row
+            textarea(rows='5' cols='50')
+          .form-row
+            button(type='submit') Send
+        .map
+          iframe(height='450', frameborder='0', style='border:0', 
+          src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCXRgu2MyzPEeePrSn6UFPsZm1vdOti8Ow\&q=Space+Needle,Seattle+WA', allowfullscreen='')
+
